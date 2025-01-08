@@ -1,0 +1,97 @@
+
+.carrito_vacio{
+    display: flex;
+    justify-content: center;
+}
+
+.carrito_vacio h1{
+    display: inline-block;
+    font-family: "Cormorant Garamond", serif;
+    color: orange;
+    text-align: center;
+    margin-top: 3em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10em;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    font-family: "Cormorant Garamond", serif;
+}
+
+#button button{
+    font-size: 1.5em;
+    background-color: orange;
+    border-radius: 10em;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 1em;
+}
+
+#button button:hover{
+    background-color: rgb(0, 0, 0);
+    color: orange;
+    border: 1px solid white;
+}
+
+.carrito_lleno{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+}
+
+.total_p{
+    display: inline-block;
+    font-family: "Cormorant Garamond", serif;
+    color: rgb(255, 145, 0);
+    text-align: center;
+    margin-top: 3em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10em;
+    font-size: 1.3em;
+}
+
+.contenedor_botones{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botones_carrito{
+    display: inline-block;
+    padding: .5em .7em;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 3em;
+}
+
+.botones_carrito button{
+    font-family: "Cormorant Garamond", serif;
+    font-size: .8em;
+    cursor: pointer;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: orange;
+}
+
+.botones_carrito button:hover{
+    color: white;
+}

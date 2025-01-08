@@ -1,0 +1,36 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    font-family: "Cormorant Garamond", serif;
+    justify-content: center;
+}
+
+.contenedor__datos{
+    margin-top: 10em;
+    max-width: 40%;
+}
+
+.contenedor__datos h1{
+    color: orange;
+}
+
+.contenedor__datos hr{
+    
+    text-align: left;
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background-color: rgb(148, 148, 148);
+}
+
+.contenedor__datos p{
+    color: white;
+}
+
+.contenedor__datos h3{
+    color: white;
+}
+
+.contenedor__img img{
+    margin-top: 10em;
+}

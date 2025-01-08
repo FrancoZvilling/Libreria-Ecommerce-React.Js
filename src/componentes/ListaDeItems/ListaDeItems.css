@@ -1,0 +1,9 @@
+.array_de_items{
+    display: flex;
+    flex-direction: row;
+    gap: 0em 5em;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100em;
+    margin: auto;
+}

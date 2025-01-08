@@ -1,0 +1,86 @@
+.linkItem{
+    text-decoration: none;
+}
+
+.contenedor_carta{
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contenedor_carta:hover{
+    transform: scale(1.03) translateY(-10px);
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 0;
+    height: 17em;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    width: 12em;
+    border: 1px solid white;
+}
+
+.contenedor_imagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contenedor_imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contador{
+    z-index: 1;
+}
+
+.detalles_carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12.6em;
+    
+}
+
+.detalles_carta h2{
+    max-width: 10em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+
+.detalles_carta h3{
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.detalles_carta h2,
+.detalles_carta h3{
+    margin: 0;
+    padding: 0;
+    color: white;
+}

@@ -1,0 +1,60 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: inline-block;
+    color: rgb(228, 105, 4);
+    margin-top: 2em;
+    font-family: "Cormorant Garamond", serif;
+    background-color: white;
+    border-radius: 2em;
+    padding: .5em .5em;
+}
+
+body .formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(20, 4, 243);
+    background-color: rgba(255, 166, 2, 0.753);
+    width: 30em;
+    height: 30em;
+    margin: 5em auto;
+    border-radius: 3em;
+    gap: 2em;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.formulario h3{
+    margin-top: -2em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.form-input{
+    display: inline-block;
+    max-width: 10em;
+    text-align: center;
+}
+
+.form-label{
+    display: inline-block;
+}
+
+.compraFinalizada{
+    color: white;
+    text-align: center;
+}
