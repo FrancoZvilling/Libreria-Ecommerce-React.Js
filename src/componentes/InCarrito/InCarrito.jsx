@@ -9,7 +9,6 @@ import ItemCarrito from "../ItemCarrito/itemCarrito";
 function InCarrito() {
 
     const { carrito, cantidadEnCarrito, limpiarCarrito, total } = useContext(CarritoContext)
-    console.log("Carro: ", carrito)
     return (
         <>
             {

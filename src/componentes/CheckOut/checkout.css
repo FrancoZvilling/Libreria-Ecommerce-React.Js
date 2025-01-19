@@ -5,11 +5,10 @@
 
 h1{
     display: inline-block;
-    color: rgb(228, 105, 4);
-    margin-top: 2em;
+    color: rgb(243, 143, 12);
     font-family: "Cormorant Garamond", serif;
     background-color: white;
-    border-radius: 2em;
+    border-radius: .8em;
     padding: .5em .5em;
 }
 
@@ -23,8 +22,8 @@ body .formulario{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(20, 4, 243);
-    background-color: rgba(255, 166, 2, 0.753);
+    color: rgb(3, 3, 3);
+    background-color: rgb(228, 228, 228);
     width: 30em;
     height: 30em;
     margin: 5em auto;
@@ -55,6 +54,30 @@ body .formulario{
 }
 
 .compraFinalizada{
-    color: white;
-    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+    display: flex;
+    
+    
+}
+
+.compraFinalizada h2{
+    color: orange;
+    background-color: black;
+    padding: 0.5em 0.8em;
+    font-size: 2em;
+    border-radius: 5em;
+}
+
+.compraFinalizada h5{
+    background-color: orange;
+    padding: 0.5em 0.8em;
+    font-size: 1em;
+    border-radius: 5em;
+}
+
+#numero_orden{
+    color: red;
 }

@@ -2,11 +2,15 @@ import './NavBar.css';
 import Carrito from '../Carrito/Carrito';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
-import { CarritoContext } from '../../context/CarritoContext';
+import { CarritoContext} from '../../context/CarritoContext';
+import { useDarkMode } from '../../context/DarkMode';
+import { MdOutlineWbSunny } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
 //Barra de navegacion
 function NavBar() {
 
     const {cantidadEnCarrito} = useContext(CarritoContext)
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
 
     return (
         <>
@@ -30,6 +34,8 @@ function NavBar() {
                             <NavLink className="subMenu" to="/categoria/Narrativa"><li>Narrativa</li></NavLink>
                             <NavLink className="subMenu" to="/categoria/Histórico"><li>Histórico</li></NavLink>
                             <NavLink className="subMenu" to="/categoria/Autoayuda"><li>Autoayuda</li></NavLink>
+                            <NavLink className="subMenu" to="/categoria/Misterio"><li>Misterio</li></NavLink>
+                            <NavLink className="subMenu" to="/categoria/Ciencias"><li>Ciencias</li></NavLink>
                         </ul>
                     </li>
                     
@@ -42,6 +48,12 @@ function NavBar() {
                     <NavLink to={"/carrito"}><button><Carrito/></button></NavLink>
                     {cantidadEnCarrito()>0 && <div id='numeroCarrito'>{cantidadEnCarrito()}</div>}
 
+                </div>
+
+                <div className={isDarkMode ? "modo_claro" : "modo_oscuro"}>
+                    <button onClick={toggleDarkMode} className={isDarkMode ? "dark-button" : ""}>
+                    {isDarkMode ?  <FaMoon /> : <MdOutlineWbSunny />}
+                    </button>
                 </div>
 
             </nav>

@@ -7,3 +7,31 @@
     max-width: 100em;
     margin: auto;
 }
+
+.paginacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8em;
+    gap: 0.3em;
+}
+.paginacion button{
+    all: unset;
+    color: black;
+    background-color: orange;
+    cursor: pointer;
+    padding: 0.2em .8em;
+    
+}
+
+.paginacion button:hover{
+    color: orange;
+    background-color: black;
+}
+
+.paginacion button.dark-button{
+    color: orange;
+    background-color: black;
+    
+}
+
+

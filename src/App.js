@@ -13,6 +13,7 @@ import { addDoc, collection } from 'firebase/firestore';
 import { db } from './firebase/firebase';
 import {lista} from "./mock/data"
 import CheckOut from './componentes/CheckOut/checkout';
+import { DarkModeProvider } from './context/DarkMode';
 
 
 
@@ -25,6 +26,9 @@ function App() {
 
   return (
   <CarritoProvider>
+    <DarkModeProvider>
+
+    
     
     <BrowserRouter>
 
@@ -44,7 +48,7 @@ function App() {
 
     </BrowserRouter>
 
-      
+    </DarkModeProvider>
 
   </CarritoProvider>
   );

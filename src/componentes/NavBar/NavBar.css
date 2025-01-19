@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     color: white;
+    padding: 0.8em;
 }
 
 .link{
@@ -71,8 +72,6 @@
 
 .menuDesplegado li:hover{
     background-color: rgb(255, 115, 0);
-    padding: 0.2em 0.8em;
-    border-radius: 0.5em;
     z-index: 100;
 }
 
@@ -81,18 +80,20 @@
     border-radius: 0.5em;
     color: rgb(0, 0, 0);
     box-shadow: 0px 1px 20px 1px rgb(117, 115, 110);
-    padding: 0.8em;
+    
 }
 
 .utilidades:hover .menuDesplegado{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    min-width: 7em;
     margin-top: 2.0em;
     border-radius: 0.5em;
     padding: 0.2em 0.8em;
     background-color: rgba(0, 0, 0);
     z-index: 100;
+    text-align: center;
 }
 
 
@@ -102,7 +103,7 @@
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    margin-right: 8em;
+    margin-right: 5em;
 }
 
 .navegacion__carrito button{
@@ -135,5 +136,61 @@
     border-radius: 20%;
     border: 0.1em solid black;
     font-size: 0.8em;
+}
+
+.modo_claro{
+    background-color: rgb(255, 255, 255);
+    padding: .3em .4em;
+    border-radius: 2em;
+    margin-right: 2em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.473);
+}
+
+.modo_claro:hover{
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.486);
+    transform: translateY(-2px);
+}
+
+.modo_claro:active{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.438);
+    transform: translateY(1px);
+}
+
+.modo_oscuro{
+    background-color: rgb(0, 0, 0);
+    padding: .3em .4em;
+    border-radius: 2em;
+    margin-right: 2em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 254, 254, 0.486);
+}
+
+.modo_oscuro:hover{
+    box-shadow: 0 8px 12px rgba(255, 253, 253, 0.568);
+    transform: translateY(-2px);
+}
+
+.modo_oscuro:active{
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.452);
+    transform: translateY(1px);
+}
+
+.modo_oscuro button{
+    all: unset;
+    font-size: 1.5em;
+    line-height: 1; 
+    vertical-align: middle;  
+}
+
+.modo_claro button{
+    all: unset;
+    font-size: 1.5em;
+    line-height: 1; 
+    vertical-align: middle; 
+}
+
+.modo_oscuro button{
+    color: rgb(250, 192, 0);
 }
 
