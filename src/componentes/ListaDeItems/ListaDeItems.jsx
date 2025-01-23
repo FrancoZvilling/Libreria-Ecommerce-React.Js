@@ -2,6 +2,7 @@ import { useState } from "react";
 import Item from "../Items/Items";
 import "./ListaDeItems.css";
 import { useDarkMode } from "../../context/DarkMode";
+import { useBusqueda } from '../../context/BusquedaContext';
 
 
 function ListaDeItems({ productos }) {
@@ -10,14 +11,19 @@ function ListaDeItems({ productos }) {
     const itemsPorPagina = 10;
 
     const { isDarkMode } = useDarkMode();
+    const { BusquedaQuery } = useBusqueda();
 
-    const productosPaginados = productos.slice(paginaActual * itemsPorPagina, (paginaActual + 1) * itemsPorPagina);
+    const productosFiltrados = productos.filter((producto) =>
+        producto.titulo.toLowerCase().includes(BusquedaQuery.toLowerCase())
+    );
+
+    const productosPaginados = productosFiltrados.slice(paginaActual * itemsPorPagina, (paginaActual + 1) * itemsPorPagina);
 
     const siguientePagina = () => {
-        if ((paginaActual + 1) * itemsPorPagina < productos.length) {
-            setPaginaActual(paginaActual + 1);
+        if ((paginaActual + 1) * itemsPorPagina < productosFiltrados.length) {
+          setPaginaActual(paginaActual + 1);
         }
-    };
+      };
 
     const paginaAnterior = () => {
         if (paginaActual > 0) {
@@ -29,7 +35,7 @@ function ListaDeItems({ productos }) {
     return (
         <>
 
-            
+
             <div className="array_de_items">
                 {productosPaginados.map((producto) => (
                     <Item key={producto.id} producto={producto} />

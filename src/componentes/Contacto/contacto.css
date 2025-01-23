@@ -64,6 +64,9 @@
 
 .contenedor__datos p{
     color: white;
+    background-color: rgba(247, 148, 0, 0.651);
+    padding: .5em .5em;
+    border-radius: .2em;
 }
 
 .contenedor__datos h3{

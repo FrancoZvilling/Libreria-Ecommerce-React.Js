@@ -14,6 +14,7 @@ import { db } from './firebase/firebase';
 import {lista} from "./mock/data"
 import CheckOut from './componentes/CheckOut/checkout';
 import { DarkModeProvider } from './context/DarkMode';
+import { BusquedaProvider } from './context/BusquedaContext';
 
 
 
@@ -27,6 +28,7 @@ function App() {
   return (
   <CarritoProvider>
     <DarkModeProvider>
+      <BusquedaProvider>
 
     
     
@@ -47,6 +49,8 @@ function App() {
     
 
     </BrowserRouter>
+
+    </BusquedaProvider>
 
     </DarkModeProvider>
 

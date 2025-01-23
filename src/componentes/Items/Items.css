@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     width: fit-content;
     margin: auto;
     margin-top: 4em;
@@ -28,6 +27,22 @@
     overflow: hidden;
     width: 12em;
     border: 1px solid white;
+}
+
+.carta_dark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 0;
+    height: 17em;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    width: 12em;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .contenedor_imagen{
@@ -58,6 +73,14 @@
     
 }
 
+.detalles_carta_dark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12.6em;
+}
+
 .detalles_carta h2{
     max-width: 10em;
     word-wrap: break-word;
@@ -71,8 +94,26 @@
     
 }
 
+.detalles_carta_dark h2{
+    max-width: 10em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 
 .detalles_carta h3{
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.detalles_carta_dark h3{
     font-family: "Barlow", sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -83,4 +124,11 @@
     margin: 0;
     padding: 0;
     color: white;
+}
+
+.detalles_carta_dark h2,
+.detalles_carta_dark h3{
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
 }

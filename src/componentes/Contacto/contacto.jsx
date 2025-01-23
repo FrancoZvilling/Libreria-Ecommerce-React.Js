@@ -1,9 +1,12 @@
 import "./contacto.css"
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { useDarkMode } from "../../context/DarkMode";
 
 
 function Contacto() {
+
+    const { isDarkMode } = useDarkMode();
     return (
         <>
             <div className="contenedor">

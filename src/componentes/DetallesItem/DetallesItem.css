@@ -1,10 +1,11 @@
 .contenedorPadre{
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 4em;
 }
 
 .contenedorImagen{
+    height: 45em;
     margin-top: 5em;
     display: flex;
     flex-direction: row;
@@ -12,13 +13,23 @@
 }
 
 .contenedorImagen img{
-    height: 40em;
+    max-width: 60vw;
+    max-height: 50vw;
     margin-left: 10em;
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
 .contenedorDescripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 2em;
+    object-fit: contain;
+}
+
+.contenedorDescripcion_dark{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,8 +50,28 @@
     overflow-y: auto;
 }
 
+.contenedorDescripcion_dark p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-right: 3em;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding-top: 0.5em;
+    margin-top: 5em;
+    height: 15em;
+    overflow-y: auto;
+}
+
 
 .contenedorIconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1.5em;
+}
+
+.contenedorIconos_dark{
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -55,12 +86,26 @@
     padding: 0.1em 0.6em;
     border-radius: 0.5em;
     margin: 0;
-    
+}
+
+.contenedorIconos_dark h3{
+    display: flex;
+    color: white;
+    background-color: rgba(19, 18, 18, 0.3);
+    width: fit-content;
+    padding: 0.1em 0.6em;
+    border-radius: 0.5em;
+    margin: 0;
 }
 
 .iconos{
     color: rgb(240, 17, 17);
     font-size: 1.5em;
+}
+
+.iconos_dark{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em; 
 }
 
 .botonesCompra{

@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import Contador from "../Contador/Contador";
 import { CarritoContext } from "../../context/CarritoContext";
+import { useDarkMode } from "../../context/DarkMode";
 import "./DetallesItem.css"
 import { ImBubbles3 } from "react-icons/im";
 import { ImQuill } from "react-icons/im";
@@ -12,6 +13,7 @@ const DetallesItem = ({ item }) => {
 
     const [cantidadEnCarrito, setCantidadEnCarrito] = useState(false)
     const { agregarItem } = useContext(CarritoContext)
+    const { isDarkMode } = useDarkMode();
 
 
     const enCarrito = (contador) => {
@@ -25,14 +27,14 @@ const DetallesItem = ({ item }) => {
                 <div className="contenedorImagen">
                     <img src={item.img} alt="" />
                 </div>
-                <div className="contenedorDescripcion">
+                <div className={isDarkMode ? "contenedorDescripcion_dark" : "contenedorDescripcion"}>
                     <div>
                         <p>{item.descripcion}</p>
-                        <div className="contenedorIconos">
-                            <h3><ImBubbles3 className="iconos" /> {item.idioma}</h3>
-                            <h3><ImQuill className="iconos" /> {item.autor}</h3>
-                            <h3><ImBook className="iconos" /> {item.paginas} páginas</h3>
-                            <h3><RiGenderlessFill className="iconos" /> {item.categoria}</h3>
+                        <div className={isDarkMode ? "contenedorIconos_dark" : "contenedorIconos"}>
+                            <h3><ImBubbles3 className={isDarkMode ? "iconos_dark" : "iconos"}/> {item.idioma}</h3>
+                            <h3><ImQuill className={isDarkMode ? "iconos_dark" : "iconos"}/> {item.autor}</h3>
+                            <h3><ImBook className={isDarkMode ? "iconos_dark" : "iconos"}/> {item.paginas} páginas</h3>
+                            <h3><RiGenderlessFill className={isDarkMode ? "iconos_dark" : "iconos"} /> {item.categoria}</h3>
                         </div>
                     </div>
 

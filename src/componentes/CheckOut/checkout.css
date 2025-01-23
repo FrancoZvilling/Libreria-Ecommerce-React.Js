@@ -19,8 +19,8 @@ body .formulario{
 
 .formulario{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     color: rgb(3, 3, 3);
     background-color: rgb(228, 228, 228);
@@ -28,25 +28,37 @@ body .formulario{
     height: 30em;
     margin: 5em auto;
     border-radius: 3em;
-    gap: 2em;
+    gap: 4em;
     font-family: "Cormorant Garamond", serif;
 }
 
 .formulario h3{
     margin-top: -2em;
+    
+    
 }
 
 .form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .5em;
+    gap: 2em;
+}
+
+.form_icon{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-radius: .5em;
+    padding-left: .2em;
+    
 }
 
 .form-input{
     display: inline-block;
     max-width: 10em;
     text-align: center;
+    font-size: 1em;
 }
 
 .form-label{
@@ -80,4 +92,45 @@ body .formulario{
 
 #numero_orden{
     color: red;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  
+}
+
+#button_submit{
+    all: unset;
+    cursor: pointer;
+    background-color: orange;
+    padding: .5em 1em;
+    border-radius: 2em;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+#button_submit:hover{
+    background-color: black;
+    color: orange;
+    border: 1px solid rgb(245, 142, 8);
+}
+
+#compra_home{
+    all: unset;
+    cursor: pointer;
+    background-color: orange;
+    padding: .5em 1em;
+    border-radius: 2em;
+    border: 1px solid black;
+    font-size: 1em;
+    cursor: pointer;
+    color: black;
+}
+
+#compra_home:hover{
+    background-color: black;
+    color: orange;
+    border:1px solid orange;
+
 }
