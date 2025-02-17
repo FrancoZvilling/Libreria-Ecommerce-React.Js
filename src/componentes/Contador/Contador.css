@@ -55,3 +55,46 @@
     color: orange;
     border: 1px solid white;
 }
+
+@media (max-width: 1300px){
+    .contenedorContador{
+        position: absolute;
+        margin-top: 31em;
+        
+    }
+}
+
+@media (max-width: 935px){
+    .contenedorContador{
+        position: absolute;
+        flex-direction: column;
+        margin-top: 31em;
+    }
+}
+
+@media (max-width: 740px){
+    .contenedorContador{
+        position: absolute;
+        flex-direction: row;
+        margin-top: 16em;
+    }
+
+}
+
+@media (max-width: 450px){
+    .contenedorContador{
+        margin-left: 4em;
+        flex-direction: column;
+        
+    }
+
+}
+
+@media (max-width: 380px){
+    .contenedorContador{
+        margin-left: 2em;
+        flex-direction: column;
+        
+    }
+
+}

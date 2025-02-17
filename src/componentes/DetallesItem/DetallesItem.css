@@ -132,3 +132,53 @@
     color: rgb(238, 159, 13);
     border: 1px solid white;
 }
+
+
+@media (max-width: 1300px){
+    .contenedorIconos{
+        flex-direction: row;
+        font-size: .6em;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 740px){
+    .contenedorPadre{
+        justify-content: center;
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .contenedorImagen img{
+        max-width: 60vw;
+        max-height: 80vw;
+        min-width: 40vw;
+        min-height: 60vw;
+        margin-left: 7em;
+        padding-top: 0em;
+        padding-bottom: 3em;
+    }
+
+    .contenedorImagen{
+        height: 80vw;
+    }
+
+    .contenedorDescripcion{
+        margin-top: -5em;
+        margin-left: 3em;
+        margin-right: -3em;
+    }
+
+    .contenedorIconos{
+        margin-top: -20em;
+        
+    }
+
+    .contenedorDescripcion p{
+        padding-top: 0em;
+        margin-top: 5em;
+        height: 6em;
+    }
+
+}
